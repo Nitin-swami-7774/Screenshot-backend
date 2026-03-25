@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: screenshot-api
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 3001

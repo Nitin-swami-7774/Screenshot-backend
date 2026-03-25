@@ -1,0 +1,18 @@
+{
+  "name": "playwright-screenshot-backend",
+  "version": "2.0.0",
+  "description": "High-performance Playwright screenshot API with page pooling and caching",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "playwright": "^1.48.0",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
