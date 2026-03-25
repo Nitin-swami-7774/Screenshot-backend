@@ -3,8 +3,7 @@ const cors = require('cors');
 const { chromium } = require('playwright');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
-
+const PORT = process.env.PORT || 10000;
 // ── CORS ────────────────────────────────────────────────────────────────
 app.use(cors({ origin: '*' }));
 
