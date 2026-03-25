@@ -2,12 +2,13 @@ FROM mcr.microsoft.com/playwright:v1.48.0-noble
 
 WORKDIR /app
 
-COPY package.json ./
-RUN npm install --production
+COPY package*.json ./
+RUN npm install --omit=dev
 
-COPY server.js ./
+COPY . .
 
-ENV PORT=3001
-EXPOSE 3001
+ENV PORT=10000
+
+EXPOSE 10000
 
 CMD ["node", "server.js"]
